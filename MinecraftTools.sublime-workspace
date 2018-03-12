@@ -1,0 +1,316 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"gamemode",
+				"gamemode \t survival"
+			],
+			[
+				"game",
+				"gamerule"
+			],
+			[
+				"exe",
+				"execute \t if"
+			],
+			[
+				"c",
+				"constant\tconvention"
+			],
+			[
+				"f",
+				"function\tconvention"
+			],
+			[
+				"s",
+				"support\tconvention"
+			],
+			[
+				"gam",
+				"gamemode \tadventure"
+			],
+			[
+				"g",
+				"gamemode"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"simplexml",
+				"simplexml_load_file"
+			],
+			[
+				"file_size",
+				"file_size_factor"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"for",
+				"form\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package dev",
+				"PackageDev: New Color Scheme"
+			],
+			[
+				"Package Control: install\t",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 492.0
+	},
+	"console":
+	{
+		"height": 193.0,
+		"history":
+		[
+			"view.run_command('example')",
+			"view.run('example')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Stefan/AppData/Local/Temp/Temp1_MCC-master.zip/MCC-master/MCC Test.sublime-syntax",
+		"/C/Users/Stefan/AppData/Local/Temp/Temp1_MCC-master.zip/MCC-master/MCC.sublime-completions",
+		"/C/Users/Stefan/AppData/Local/Temp/Temp1_MCC-master.zip/MCC-master/Minecraft Function.tmLanguage",
+		"/C/Users/Stefan/AppData/Local/Temp/Temp1_MCC-master.zip/MCC-master/gutter.py",
+		"/C/Users/Stefan/AppData/Local/Temp/Temp1_MCC-master.zip/MCC-master/Minecraft Function.YAML-tmLanguage",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftTools/MinecraftTools.sublime-build",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftTools/snippets/at-s.sublime-snippet",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftTools/snippets/gamemode creative.sublime-snippet",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftTools/snippets/gamemode adventure.sublime-snippet",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftTools/snippets/gamemode survival.sublime-snippet",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftTools/snippets/gamemode spectator.sublime-snippet",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftTools/snippets/@s.sublime-snippet",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftTools/MinecraftTools.sublime-completions",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftTools/Color Scheme - Monokai.sublime-color-scheme",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftTools/MinecraftTools.sublime-color-scheme",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftTools/gamemode.sublime-snippet",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftTools/test.mcfunction",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftTools/MinecraftTools.sublime-snippet",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftTools/tools.json",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftMapmakingTools/test.mcfunction",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftMapmakingTools/mmt.YAML-tmLanguage",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftMapmakingTools/completions.sublime-completions",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftMapmakingTools/Main.sublime-menu",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/MinecraftMapmakingTools/main.py",
+		"/D/Steam/SteamApps/common/Destinations/content/steamtours_addons/arcade_roll/panorama/layout/custom_destination/arcade_toss_scoreboard.xml",
+		"/D/Projects/Websites/InfiniteGenderBathrooms/index.php",
+		"/C/Program Files (x86)/Steam/steamapps/sourcemods/Portal Revolution/pak01_dir/materials/decals/demonstration_test_01.vmt",
+		"/D/Steam/SteamApps/common/Destinations/content/steamtours_addons/arcade_roll/panorama/layout/custom_destination/arcade_toss_info.xml",
+		"/D/Projects/Websites/InfiniteGenderBathrooms/room.png",
+		"/C/Program Files (x86)/Steam/steamapps/sourcemods/Portal Revolution/pak01_dir/scenes/npc/peat/sp_p2_3_part_04.vcd",
+		"/C/Program Files (x86)/Steam/steamapps/sourcemods/Portal Revolution/pak01_dir/scenes/npc/peat/sp_p2_3_part_05.vcd",
+		"/C/Users/Stefan/AppData/Local/Temp/portal_door_02.vmt",
+		"/C/Users/Stefan/AppData/Local/Temp/portal_door_light.vmt",
+		"/D/Projects/libgdx/gdx-setup-ui.jar",
+		"/C/Program Files (x86)/Steam/steamapps/sourcemods/Portal Revolution/pak01_dir/scenes/npc/peat/sp_p2_3_part_06.vcd",
+		"/C/Users/Stefan/Desktop/test.js",
+		"/C/Users/Stefan/AppData/Local/Temp/portal_door_combined.mdl",
+		"/C/Users/Stefan/AppData/Roaming/Sublime Text 3/Packages/JavaScript Completions/JavaScript-Completions.sublime-settings",
+		"/D/Projects/Websites/Documentation/documentation/test/config.xml",
+		"/D/Projects/Websites/Documentation/documentation/test/content.html",
+		"/C/Users/Stefan/AppData/Local/Temp/white_floor_tile002b.vmt",
+		"/C/Program Files (x86)/Steam/steamapps/sourcemods/Portal Revolution/pak01_dir/materials/tile/white_floor_002a_tile_clean.vmt",
+		"/C/Program Files (x86)/Steam/steamapps/common/Portal 2/portal2/materials/tile/white_floor_002a_tile_clean.vmt",
+		"/C/Users/Stefan/AppData/Local/Temp/white_ceiling_tile002a.vmt",
+		"/C/Users/Stefan/AppData/Local/Temp/white_floor_tile002a.vmt",
+		"/D/Projects/Websites/Documentation/index.php",
+		"/D/Projects/Websites/Documentation/doc.php",
+		"/C/Program Files (x86)/Steam/steamapps/sourcemods/Portal Revolution/scripts/game_sounds_revolution_voice.txt",
+		"/C/Program Files (x86)/Steam/steamapps/sourcemods/Portal Revolution/pak01_dir/materials/tile/white_floor_002a_clean.vmt",
+		"/C/Program Files (x86)/Steam/steamapps/sourcemods/Portal Revolution/pak01_dir/materials/tile/white_ceiling_tile002a.vmt",
+		"/D/Projects/Websites/Documentation/default.css",
+		"/D/Projects/Websites/Documentation/documentation/template/config.xml",
+		"/D/Projects/Websites/Documentation/documentation/template/content.html",
+		"/D/Projects/Websites/Documentation/doc.css",
+		"/D/Projects/Markdown/test.md",
+		"/C/Program Files (x86)/Steam/steamapps/sourcemods/Portal Revolution/pak01_dir/scenes/npc/peat/sp_p2_1_part_02.vcd",
+		"/C/Program Files (x86)/Steam/steamapps/common/Counter-Strike Global Offensive/installscript.vdf",
+		"/D/STEAMWORKS_SDK/sdk/tools/ContentBuilder/scripts/depot_build_601361.vdf",
+		"/D/STEAMWORKS_SDK/sdk/tools/ContentBuilder/scripts/app_build_601360.vdf",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Program Files (x86)/Steam/steamapps/sourcemods/Portal Revolution/pak01_dir/scenes/npc/peat/sp_p2_1_part_01.vcd",
+		"/D/Projects/Websites/dynamicdl/dyndl.php",
+		"/C/Program Files (x86)/Steam/steamapps/sourcemods/Portal Revolution/pak01_dir/materials/metal/metalwall045a.vmt",
+		"/C/Program Files (x86)/Steam/steamapps/sourcemods/Portal Revolution/materials/metal/metalwall045a.vmt",
+		"//nas2/webspace/spycesoftware/profiles/product/revolution/config.xml",
+		"//nas2/webspace/tewanlinks/dyndl/config.xml",
+		"//nas2/webspace/dynamicdl/dyndl.php",
+		"/D/Projects/Websites/dynamicdl/dyndl/elem_dir.php",
+		"/D/Projects/Websites/dynamicdl/dyndl/config.xml",
+		"/D/Projects/Websites/dynamicdl/dyndl/parent_dir.php",
+		"/C/Users/Stefan/AppData/Local/Temp/black_floor_metal_004b.vmt",
+		"/D/Projects/Websites/dynamicdl/dyndl/elem_file.php",
+		"//nas2/webspace/dynamicdl/dyndl/config.xml",
+		"//nas2/webspace/dynamicdl/parent_dir.php",
+		"//nas2/webspace/dynamicdl/dyndl/elem_dir.php",
+		"//nas2/webspace/dynamicdl/dyndl/elem_file.php",
+		"//nas2/webspace/dynamicdl/download.php",
+		"/G/Program Files (x86)/Steam/SteamApps/sourcemods/Portal Revolution/materials/glass/glasswindow_frosted_additive.vmt"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "MinecraftTools.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 354.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

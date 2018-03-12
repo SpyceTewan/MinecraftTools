@@ -1,0 +1,8 @@
+{
+	"scope": "source.mcfunction",
+
+	"completions": [
+		{ "trigger": "minecraft: \t ", "contents": "minecraft:" },
+		
+	]
+}

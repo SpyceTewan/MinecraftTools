@@ -1,0 +1,45 @@
+%YAML 1.2
+---
+name: MCMeta
+file_extensions:
+  - mcmeta
+scope: source.mcmeta
+
+contexts:
+  prototype:
+    - include: comments
+
+  main:
+    - include: keywords
+    - include: numbers
+    - include: strings
+
+  keywords:
+    - match: '({|}|:|,)'
+      scope: support.other.mcmeta
+
+  numbers:
+    - match: '(-)?[0-9.]+'
+      scope: constant.numeric.mcmeta
+
+  strings:
+    - match: '"'
+      scope: storage.modifier.mcmeta
+      push: inside_string
+
+  inside_string:
+    - meta_include_prototype: false
+    - meta_scope: storage.type.mcmeta
+    - match: '\.'
+      scope: constant.character.escape.mcmeta
+    - match: '"'
+      scope: storage.modifier.mcmeta
+      pop: true
+
+  comments:
+    - match: '//'
+      scope: punctuation.definition.comment.mcmeta
+      push:
+        - meta_scope: comment.line.double-slash.mcmeta
+        - match: $\n?
+          pop: true

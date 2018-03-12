@@ -1,0 +1,99 @@
+%YAML 1.2
+---
+name: MC Function
+file_extensions:
+  - mcfunction
+scope: source.mcfunction
+
+contexts:
+  prototype:
+    - include: comments
+
+  main:
+    - include: commands
+    - include: placeholder
+    - include: placeholder-inside
+    - include: numbers
+    - include: strings
+    - include: selectors
+    - include: execute-parameters
+    - include: gamemode-parameters
+    - include: advancement-parameters
+    - include: execute-options
+    - include: options
+    - include: minecraft
+
+
+  commands:
+    - match: '(advancement|ban|ban-ip|banlist|bossbar|clear|clone|data|datapack|debug|defaultgamemode|deop|difficulty|effect|enchant|execute|experience|fill|function|gamemode|gamerule|give|help|kick|kill|list|locate|me|msg|op|pardon|pardon-ip|particle|playsound|publish|recipe|reload|replaceitem|save-all|save-off|save-on|say|scoreboard|seed|setblock|setidletimeout|setworldspawn|spawnpoint|spreadplayers|stop|stopsound|summon|tag|team|teleport|tell|tellraw|time|title|tp|trigger|w|weather|whitelist|worldborder|xp)'
+      scope: entity.name.enum.mcfunction
+
+  selectors:
+    - match: '(@s|@e|@a|@p|@r)'
+      scope: support.type.mcfunction
+
+  numbers:
+    - match: '(-)?[0-9.]+'
+      scope: constant.numeric.mcfunction
+
+  options:
+    - match: '(block|blocks|entity|bossbar)'
+      scope: support.function.mcfunction
+
+  execute-parameters:
+    - match: '(as|at|run|if|in|facing|rotated|positioned|anchored|align|store|unless)'
+      scope: variable.parameter.mcfunction
+
+  execute-options:
+    - match: '(x|y|z|success|result|overworld|the_nether|the_end)'
+      scope: variable.annotation.mcfunction
+
+  gamemode-parameters:
+    - match: '(survival|creative|adventure|spectator)'
+      scope: variable.parameter.mcfunction
+
+  advancement-parameters:
+    - match: '(grant|revoke|from|everything|until|only|through)'
+      scope: variable.parameter.mcfunction
+
+  placeholder:
+    - match: '<'
+      scope: invalid.illegal.mcfunction
+      push: placeholder-inside
+
+  placeholder-inside:
+    - meta_include_prototype: false
+    - meta_scope: invalid.illegal.mcfunction
+    - match: '>'
+      pop: true
+
+  minecraft:
+    - match: 'minecraft:'
+      scope: string.regexp.mcfunction
+      push: minecraft-string
+
+  minecraft-string:
+    - meta_include_prototype: false
+    - meta_scope: string.regexp.mcfunction
+    - match: ' '
+      pop: true
+
+  strings:
+    - match: '"'
+      scope: punctuation.definition.string.begin.mcfunction
+      push: inside_string
+
+  inside_string:
+    - meta_include_prototype: false
+    - meta_scope: string.interpolated.mcfunction
+    - match: '"'
+      scope: punctuation.definition.string.end.mcfunction
+      pop: true
+
+  comments:
+    - match: '#'
+      scope: punctuation.definition.comment.mcfunction
+      push:
+        - meta_scope: comment.line.double-slash.mcfunction
+        - match: $\n?
+          pop: true

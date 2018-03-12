@@ -1,0 +1,16 @@
+[
+  { 
+  	"id": "Minecraft Tools",
+  	"caption": "Minecraft Tools",
+    "children": [
+      { "caption": "Datapacks",
+        "children": [
+          { 
+          	"caption": "Create new Datapack",
+          	"command": "new_data_pack",
+          }
+        ]
+      }
+    ]
+  }
+]
