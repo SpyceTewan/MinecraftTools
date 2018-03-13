@@ -13,6 +13,11 @@ class tools():
 	    except OSError:
 	    	print("[Tools] Could not create directory")
 
+class about_menu(sublime_plugin.TextCommand):
+	def run(self, edit):
+		sublime.message_dialog("Credits \n----------\nPlugin coding etc: Tewan\nTwitter: @spyce_tewan\nYouTube: youtube.com/tewan\n\nDatapack structure & libraries: Halbzwilling\nTwitter: @Halbzwilling\nYouTube: youtube.com/halbzwilling")
+
+
 class new_data_pack(sublime_plugin.TextCommand):
 
 	def run(self, edit):

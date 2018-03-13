@@ -1,0 +1,11 @@
+{
+	"scope": "source.mcfunction",
+
+	"completions": [
+		{ "trigger": "at \t @s", "contents": "@s" },
+		{ "trigger": "at \t @e", "contents": "@e" },
+		{ "trigger": "at \t @p", "contents": "@p" },
+		{ "trigger": "at \t @a", "contents": "@a" },
+		{ "trigger": "at \t @r", "contents": "@r" },
+	]
+}

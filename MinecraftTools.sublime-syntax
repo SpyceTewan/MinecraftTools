@@ -37,7 +37,7 @@ contexts:
       scope: constant.numeric.mcfunction
 
   options:
-    - match: '(block|blocks|entity|bossbar)'
+    - match: '(block|blocks|entity|bossbar|ips|players|create|set|remove|get)'
       scope: support.function.mcfunction
 
   execute-parameters:
@@ -57,14 +57,14 @@ contexts:
       scope: variable.parameter.mcfunction
 
   placeholder:
-    - match: '<'
+    - match: '\('
       scope: invalid.illegal.mcfunction
       push: placeholder-inside
 
   placeholder-inside:
     - meta_include_prototype: false
     - meta_scope: invalid.illegal.mcfunction
-    - match: '>'
+    - match: '\)'
       pop: true
 
   minecraft:

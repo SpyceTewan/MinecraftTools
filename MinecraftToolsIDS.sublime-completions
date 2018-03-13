@@ -2,7 +2,7 @@
 	"scope": "source.mcfunction",
 
 	"completions": [
-		{ "trigger": "minecraft: \t ", "contents": "minecraft:" },
-		
+		{ "trigger": "minecraft: \t air", "contents": "minecraft:air" },
+		{ "trigger": "minecraft: \t stone", "contents": "minecraft:stone" },
 	]
 }
