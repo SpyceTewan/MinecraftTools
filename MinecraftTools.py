@@ -2,6 +2,7 @@ import sublime
 import sublime_plugin
 import getpass
 import os
+import subprocess
 
 class tools():
 	def create_folder(directory): # Copied from somewhere to create directories
@@ -13,10 +14,14 @@ class tools():
 	    except OSError:
 	    	print("[Tools] Could not create directory")
 
+	def create_file(directory, content):
+		file = open(directory, "w")
+		file.write(content)
+		file.close()
+
 class about_menu(sublime_plugin.TextCommand):
 	def run(self, edit):
 		sublime.message_dialog("Credits \n----------\nPlugin coding etc: Tewan\nTwitter: @spyce_tewan\nYouTube: youtube.com/tewan\n\nDatapack structure & libraries: Halbzwilling\nTwitter: @Halbzwilling\nYouTube: youtube.com/halbzwilling")
-
 
 class new_data_pack(sublime_plugin.TextCommand):
 
@@ -44,7 +49,7 @@ class new_data_pack(sublime_plugin.TextCommand):
 
 			if not illegal: # Check if the name is valid
 
-				self.pack_dir = "C:/Users/" + getpass.getuser() + "/Documents/Datapacks/" + self.pack_name
+				self.pack_dir = "C:/Users/" + getpass.getuser() + "/AppData/Roaming/.minecraft/datapacks/" + self.pack_name
 
 				if not self.pack_dir[len(self.pack_dir) - 1] is " ":
 					if not os.path.exists(self.pack_dir):
@@ -60,7 +65,7 @@ class new_data_pack(sublime_plugin.TextCommand):
 				sublime.error_message("[MinecraftTools] Error: Name contains illegal symbol " + illegal_symbols[illegalindex]);
 		
 		else: # Name is empty
-			sublime.error_message(" [MinecraftTools] Error: Name cannot be empty!")
+			sublime.error_message("[MinecraftTools] Error: Name cannot be empty!")
 
 	# Create the actual pack
 	def create_data_pack(self):
@@ -69,14 +74,26 @@ class new_data_pack(sublime_plugin.TextCommand):
 		tools.create_folder(self.pack_dir)
 
 		# Creating the pack.mcmeta file
-		file = open(self.pack_dir + "/pack.mcmeta", "w")
-		file.write('{ "pack": { "description": "' + self.pack_name + '", "pack_format": 1 }}')
-		file.close()
-		sublime.message_dialog("[MinecraftTools] Success! Datapack created in " + self.pack_dir)
-
-		# Opening explorer in the right directory
-		os.system("@echo off")
-		os.system("start explorer " + self.pack_dir)
+		tools.create_file(self.pack_dir + "/pack.mcmeta", '{ "pack": { "description": "' + self.pack_name + '", "pack_format": 1 }}')
 
 		# Creating datapack structure
-		tools.create_folder(self.pack_dir + "/data")
+		data_dir = self.pack_dir + "/data/"
+		data_namespace = data_dir + self.pack_name
+
+		# Creating tags in minecraft namespace
+		tools.create_folder(data_dir + "minecraft/tags/functions")
+		tools.create_file(data_dir + "minecraft/tags/functions/load.json", '{ "values": ["' + self.pack_name + ':init"] }')
+		tools.create_file(data_dir + "minecraft/tags/functions/tick.json", '{ "values": ["' + self.pack_name + ':update"] }')
+
+		# Creating update and init under package namespace
+		tools.create_folder(data_dir + self.pack_name + "/functions")
+		tools.create_file(data_namespace + "/functions/init.mcfunction", '#This gets executed only one time when the datapack has loaded!')
+		tools.create_file(data_namespace + "/functions/update.mcfunction", '#This gets executed every tick after initializing!')
+
+
+
+		## ========	 SUCCESS!! =========	
+		sublime.message_dialog("[MinecraftTools] Success! Datapack " + self.pack_name + " has been created")
+		
+		if sublime.platform() == "windows":
+			subprocess.Popen(["C:\Program Files\Sublime Text 3\sublime_text.exe", self.pack_dir], shell=True)
