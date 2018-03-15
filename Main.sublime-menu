@@ -1,20 +1,13 @@
 [
   { 
-  	"id": "Minecraft Tools",
-  	"caption": "Minecraft Tools",
+  	"id": "file",
     "children": [
-      { 
-        "caption": "Datapacks",
-        "children": [
-          { 
-          	"caption": "Create new Datapack",
-          	"command": "new_data_pack"
-          }
-        ]
+      {
+        "caption": "-"
       },
       {
-        "caption": "About...",
-        "command": "about_menu"
+        "caption": "New Datapack",
+        "command": "new_data_pack",
       }
     ]
   }
