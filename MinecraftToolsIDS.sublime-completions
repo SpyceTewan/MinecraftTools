@@ -2,7 +2,36 @@
 	"scope": "source.mcfunction",
 
 	"completions": [
-		{ "trigger": "minecraft: \t air", "contents": "minecraft:air" },
-		{ "trigger": "minecraft: \t stone", "contents": "minecraft:stone" },
+		{ "trigger": "§i: \t air", "contents": "minecraft:air" },
+		{ "trigger": "§i: \t stone", "contents": "minecraft:stone" },
+
+		{ "trigger": "§e: \t absorption", "contents": "minecraft:absorption" },
+		{ "trigger": "§e: \t blindness", "contents": "minecraft:blindness" },
+		{ "trigger": "§e: \t fire_resistance", "contents": "minecraft:fire_resistance" },
+		{ "trigger": "§e: \t glowing", "contents": "minecraft:glowing" },
+		{ "trigger": "§e: \t haste", "contents": "minecraft:haste" },
+		{ "trigger": "§e: \t health_boost", "contents": "minecraft:health_boost" },
+		{ "trigger": "§e: \t hunger", "contents": "minecraft:hunger" },
+		{ "trigger": "§e: \t instant_damage", "contents": "minecraft:instant_damage" },
+		{ "trigger": "§e: \t instant_health", "contents": "minecraft:instant_health" },
+		{ "trigger": "§e: \t invisibility", "contents": "minecraft:invisibility" },
+		{ "trigger": "§e: \t jump_boost", "contents": "minecraft:jump_boost" },
+		{ "trigger": "§e: \t levitation", "contents": "minecraft:levitation" },
+		{ "trigger": "§e: \t luck", "contents": "minecraft:luck" },
+		{ "trigger": "§e: \t mining_fatigue", "contents": "minecraft:mining_fatigue" },
+		{ "trigger": "§e: \t nausea", "contents": "minecraft:nausea" },
+		{ "trigger": "§e: \t night_vision", "contents": "minecraft:night_vision" },
+		{ "trigger": "§e: \t poison", "contents": "minecraft:poison" },
+		{ "trigger": "§e: \t regeneration", "contents": "minecraft:regeneration" },
+		{ "trigger": "§e: \t resistance", "contents": "minecraft:resistance" },
+		{ "trigger": "§e: \t saturation", "contents": "minecraft:saturation" },
+		{ "trigger": "§e: \t slowness", "contents": "minecraft:slowness" },
+		{ "trigger": "§e: \t speed", "contents": "minecraft:speed" },
+		{ "trigger": "§e: \t strength", "contents": "minecraft:strength" },
+		{ "trigger": "§e: \t unluck", "contents": "minecraft:unluck" },
+		{ "trigger": "§e: \t water_breathing", "contents": "minecraft:water_breathing" },
+		{ "trigger": "§e: \t weakness", "contents": "minecraft:weakness" },
+		{ "trigger": "§e: \t wither", "contents": "minecraft:wither" },
+
 	]
 }

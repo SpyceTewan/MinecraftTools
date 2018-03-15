@@ -3,7 +3,7 @@
 
 	"completions": [
 
-		// TODO: clone, data, effect, enchant, experience, fill, particle, playsound, recipe, replaceitem, scoreboard, setblock, setidletimeout, spreadplayers, stopsound, summon, tag, team, tellraw, title, tellraw, whitelist, worldborder, xp
+		// TODO: clone, data, enchant, fill, particle, playsound, recipe, replaceitem, scoreboard, setblock, spreadplayers, stopsound, summon, tag, team, tellraw, title, tellraw, worldborder
 
 		// Advancements
 		{ "trigger": "advancement \t grant", "contents": "advancement grant ${1:(target)} ${2:(everything|from|only|through|until)} ${3:[advancement]}" },
@@ -30,6 +30,14 @@
 		{ "trigger": "msg", "contents": "msg ${1:(target)} ${1:(message)}" },
 		{ "trigger": "w", "contents": "w ${1:(target)} ${1:(message)}" },
 		{ "trigger": "tell", "contents": "tell ${1:(target)} ${1:(message)}" },
+		{ "trigger": "whitelist \t on", "contents": "whitelist on" },
+		{ "trigger": "whitelist \t off", "contents": "whitelist off" },
+		{ "trigger": "whitelist \t reload", "contents": "whitelist reload" },
+		{ "trigger": "whitelist \t list", "contents": "whitelist list" },
+		{ "trigger": "whitelist \t add", "contents": "whitelist add ${1:(target)}" },
+		{ "trigger": "whitelist \t remove", "contents": "whitelist remove ${1:(target)}" },
+		{ "trigger": "setidletimeout", "contents": "setidletimeout ${1:(minutes)}" },
+
 
 		{ "trigger": "weather \t clear", "contents": "weather clear" },
 		{ "trigger": "weather \t rain", "contents": "weather rain" },
@@ -98,6 +106,22 @@
 		{ "trigger": "bossbar \t remove", "contents": "bossbar remove ${1:(id)}" },
 		{ "trigger": "bossbar \t set", "contents": "bossbar set ${1:(id)}" },
 
+		// Entity Manipulation
+		{ "trigger": "effect \t give", "contents": "effect give ${1:(target)} §e$2" },
+		{ "trigger": "effect \t clear", "contents": "effect clear ${1:(target)} ${2:(effect)}" },
+		{ "trigger": "xp \t add levels", "contents": "xp add ${1:(target)} ${2:(amount)} levels" },
+		{ "trigger": "xp \t add point", "contents": "xp add ${1:(target)} ${2:(amount)} point" },
+		{ "trigger": "xp \t set levels", "contents": "xp set ${1:(target)} ${2:(amount)} levels" },
+		{ "trigger": "xp \t set point", "contents": "xp set ${1:(target)} ${2:(amount)} point" },
+		{ "trigger": "xp \t query levels", "contents": "xp query ${1:(target)} levels" },
+		{ "trigger": "xp \t query point", "contents": "xp query ${1:(target)} point" },
+		{ "trigger": "experience \t add levels", "contents": "experience add ${1:(target)} ${2:(amount)} levels" },
+		{ "trigger": "experience \t add point", "contents": "experience add ${1:(target)} ${2:(amount)} point" },
+		{ "trigger": "experience \t set levels", "contents": "experience set ${1:(target)} ${2:(amount)} levels" },
+		{ "trigger": "experience \t set point", "contents": "experience set ${1:(target)} ${2:(amount)} point" },
+		{ "trigger": "experience \t query levels", "contents": "experience query ${1:(target)} levels" },
+		{ "trigger": "experience \t query point", "contents": "experience query ${1:(target)} point" },
+
 		// Execute
 		{ "trigger": "execute \t ", "contents": "execute "},
 		{ "trigger": "execute \t align", "contents": "align ${1:(axes)}" },
@@ -119,7 +143,10 @@
 		{ "trigger": "execute \t run", "contents": "run " },
 		{ "trigger": "execute \t store success", "contents": "store success ${1:(block|bossbar|entity|score)}" },
 		{ "trigger": "execute \t store result", "contents": "store result ${1:(block|bossbar|entity|score)}" },
-		{ "trigger": "execute \t unless", "contents": "unless ${1:(target)}" },
+		{ "trigger": "execute \t unless block", "contents": "unless block ${1:~} ${2:~} ${3:~} minecraft:$4" },
+		{ "trigger": "execute \t unless blocks", "contents": "unless blocks ${1:~} ${2:~} ${3:~} ${4:~} ${5:~} ${6:~} ${7:~} ${8:~} ${9:~} minecraft:$10"},
+		{ "trigger": "execute \t unless entity", "contents": "unless entity ${1:(target)}" },
+		{ "trigger": "execute \t unless score", "contents": "unless score ${1:}" },
 
 		// Advanced stuff
 		{ "trigger": "datapack \t list enabled", "contents": "datapack list enabled" },

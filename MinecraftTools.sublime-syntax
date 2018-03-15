@@ -12,6 +12,7 @@ contexts:
   main:
     - include: commands
     - include: placeholder
+    - include: placeholder-brackets
     - include: placeholder-inside
     - include: numbers
     - include: strings
@@ -25,7 +26,7 @@ contexts:
 
 
   commands:
-    - match: '(advancement|ban|ban-ip|banlist|bossbar|clear|clone|data|datapack|debug|defaultgamemode|deop|difficulty|effect|enchant|execute|experience|fill|function|gamemode|gamerule|give|help|kick|kill|locate|me|msg|op|pardon|pardon-ip|particle|playsound|publish|recipe|reload|replaceitem|save-all|save-off|save-on|say|scoreboard|seed|setblock|setidletimeout|setworldspawn|spawnpoint|spreadplayers|stop|stopsound|summon|tag|team|teleport|tell|tellraw|time|title|tp|trigger|w|weather|whitelist|worldborder|xp)'
+    - match: '(advancement|ban|ban-ip|banlist|bossbar|clear|clone|data|datapack|debug|defaultgamemode|deop|difficulty|effect|enchant|execute|experience|fill|function|gamemode|gamerule|give|help|kick|kill|locate|me|msg|op|pardon|pardon-ip|particle|playsound|publish|recipe|reload|replaceitem|save-all|save-off|save-on|say|scoreboard|seed|setblock|setidletimeout|setworldspawn|spawnpoint|spreadplayers|stop|stopsound|summon|tag|team|teleport|tell|tellraw|time|title|tp|trigger|weather|whitelist|w|worldborder|xp)'
       scope: entity.name.function.constructor.mcfunction
 
   selectors:
@@ -37,12 +38,12 @@ contexts:
       scope: constant.numeric.mcfunction
 
   options:
-    - match: '(block|blocks|entity|bossbar|ips|players|create|set|remove|get)'
+    - match: '(block|blocks|entity|bossbar|ips|players|create|set|remove|get|add|query|points|levels|on|off|list)'
       scope: entity.name.tag.mcfunction
 
   execute-parameters:
     - match: '(as|at|run|if|in|facing|rotated|positioned|anchored|align|store|unless)'
-      scope: variable.parameter.mcfunction
+      scope: entity.other.inherited-class.mcfunction
 
   execute-options:
     - match: '(x|y|z|success|result|overworld|the_nether|the_end)'
@@ -57,6 +58,10 @@ contexts:
       scope: variable.parameter.mcfunction
 
   placeholder:
+    - match: '(§e|§i|§p|§a)'
+      scope: invalid.deprecated.mcfunction
+
+  placeholder-brackets:
     - match: '\('
       scope: invalid.illegal.mcfunction
       push: placeholder-inside

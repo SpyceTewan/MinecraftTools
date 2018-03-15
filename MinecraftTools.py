@@ -90,7 +90,10 @@ class new_data_pack(sublime_plugin.TextCommand):
 		tools.create_file(data_namespace + "/functions/init.mcfunction", '#This gets executed only one time when the datapack has loaded!')
 		tools.create_file(data_namespace + "/functions/update.mcfunction", '#This gets executed every tick after initializing!')
 
-
+		# Creating shapeless and shaped templates
+		tools.create_folder(data_namespace + "/recipes")
+		tools.create_file(data_namespace + "/recipes/shaped.json", '{\n  "type": "crafting_shaped",\n"pattern": [\n    "# #",\n    " # ",\n    "# #"\n  ],\n  "key": {\n    "": {\n      "item": "minecraft:"\n    }\n  },\n  "result": {\n    "item": "minecraft:",\n    "count": 1\n  }\n}')
+		tools.create_file(data_namespace + "/recipes/shapeless.json", '{\n  "type": "crafting_shapeless",\n  "ingredients": [{\n    "item": "minecraft:"\n  }],\n  "result": {\n    "item": "minecraft:",\n    "count": 1\n  }\n}')
 
 		## ========	 SUCCESS!! =========	
 		sublime.message_dialog("[MinecraftTools] Success! Datapack " + self.pack_name + " has been created")
